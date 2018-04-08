@@ -27,6 +27,7 @@ if($result === FALSE){
     while($rows = $result->fetch_assoc()){
         if(password_verify($password,$rows["pass"])){
             consolelog("Success logged in");
+            header("Location:/loginsuccess.html");
         }
         else{
             consolelog("Wrong password");
