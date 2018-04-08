@@ -1,11 +1,32 @@
+<!DOCTYPE html>
 <html>
-    
-    <h1>
-       Sign In
-    </h1>
-    <form action="/php/login.php" method="post">
-      Email  <input type="text" name="username"><br><br>
-      Password  <input type="password" name="password"><br><br>
-         <input value="Submit" type="submit">
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+<h1 style="text-align:center;padding-top:20px">
+    Sign Up
+    <br>
+    <br>
+</h1>
+<div class="row">
+<div class="form-group col-md-4" style="margin-left:auto;margin-right:auto;width: 8em;" >
+    <form action="/php/signin.php" method="post">
+        <label for="email">Email</label>
+        <input type="text" name="email" class="form-control">
+        <br>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" class="form-control">
+        <br>
+        <br>
+       
+        <button value="Submit" type="submit" class="btn btn-primary">Submit</button>
     </form>
+    <!-- </div> -->
+</div>
+
 </html>
