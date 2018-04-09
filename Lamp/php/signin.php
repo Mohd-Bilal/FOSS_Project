@@ -31,6 +31,7 @@ if($result === FALSE){
         }
         else{
             consolelog("Wrong password");
+            header("Location:/loginfailed.html");
         }
 }
 }
